@@ -2,7 +2,7 @@
   "name": "tt-times",
   "version": "0.1.0",
   "private": false,
-  "homepage": ".",
+  "homepage": "https://kkzleo.github.io/tt-times",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.35",
