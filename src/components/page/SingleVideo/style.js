@@ -29,7 +29,7 @@ export const VideoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   width: 100vw;
 
   ${sm} {
@@ -50,8 +50,7 @@ export const VideoContainer = styled.div`
 `
 
 export const TitleContainer = styled.div`
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 20px;
   width: 100%;
 `
 

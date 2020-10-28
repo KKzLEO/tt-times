@@ -27,4 +27,9 @@ const Section = styled(Container)`
   }
 `
 
+export const SmallSection = styled(Container)`
+  margin-top: 40px;
+  margin-bottom: 40px;
+`
+
 export default Section

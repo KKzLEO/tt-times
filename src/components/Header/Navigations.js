@@ -8,25 +8,25 @@ import { Link, useRouteMatch } from 'react-router-dom'
 
 export const routes = [
   {
-    pathname: '/',
+    pathname: '/tt-times',
     Icon: HomeOutlinedIcon,
     name: '首頁',
     key: 'default'
   },
   {
-    pathname: '/video',
+    pathname: '/tt-times/video',
     Icon: TheatersOutlinedIcon,
     name: '影片',
     key: 'video'
   },
   {
-    pathname: '/podcast',
+    pathname: '/tt-times/podcast',
     Icon: MusicNoteOutlinedIcon,
     name: 'PODCAST',
     key: 'podcast'
   },
   {
-    pathname: '/blog',
+    pathname: '/tt-times/blog',
     Icon: BookmarkBorderOutlinedIcon,
     name: '部落格',
     key: 'blog'
@@ -34,7 +34,7 @@ export const routes = [
 ]
 
 const Navigations = (props) => {
-  const match = useRouteMatch('/:page/')
+  const match = useRouteMatch('/tt-times/:page/')
   const page = match?.params?.page || 'default'
 
   return (

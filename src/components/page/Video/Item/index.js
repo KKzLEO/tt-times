@@ -6,7 +6,7 @@ const VideoItem = ({ imageUrl, imageAlt, title, id, badge, hover }) => {
   const history = useHistory()
 
   const handleClick = () => {
-    history.push(`/video/${id}`)
+    history.push(`/tt-times/video/${id}`)
   }
 
   return (

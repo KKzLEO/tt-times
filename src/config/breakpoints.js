@@ -9,13 +9,14 @@ export const breakpoints = {
 const media = (pixels) => `@media (min-width: ${pixels}px)`
 const maxMedia = (pixels) => `@media (max-width: ${pixels}px)`
 
-const { _sm, _md, _lg, _xl } = breakpoints
+const { _xs, _sm, _md, _lg, _xl } = breakpoints
 
 export const sm = media(_sm)
 export const md = media(_md)
 export const lg = media(_lg)
 export const xl = media(_xl)
 
+export const lessThanXs = maxMedia(_xs)
 export const lessThanSm = maxMedia(_sm)
 export const lessThanMd = maxMedia(_md)
 export const lessThanLg = maxMedia(_lg)

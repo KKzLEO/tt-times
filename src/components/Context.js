@@ -1,5 +1,7 @@
 import { createContext, useReducer, useContext } from 'react'
 import EP1 from 'assets/images/ep1.jpg'
+import EP2 from 'assets/images/ep2.jpg'
+import EP3 from 'assets/images/ep3.jpg'
 
 export const MainContext = createContext({})
 
@@ -16,17 +18,17 @@ const initState = {
         'https://iframe.videodelivery.net/ceca137e368af4e5b28d873415064802',
     },
     2: {
-      imageUrl: EP1,
-      imageAlt: '商務會展停擺怎麼辦？線上貿易搶先做！',
-      title: '商務會展停擺怎麼辦？線上貿易搶先做！',
+      imageUrl: EP2,
+      imageAlt: '不只是美學話題，端莊時尚商機',
+      title: '不只是美學話題，端莊時尚商機',
       badge: 'EP2',
       videoUrl:
         'https://iframe.videodelivery.net/ceca137e368af4e5b28d873415064802',
     },
     3: {
-      imageUrl: EP1,
-      imageAlt: '商務會展停擺怎麼辦？線上貿易搶先做！',
-      title: '商務會展停擺怎麼辦？線上貿易搶先做！',
+      imageUrl: EP3,
+      imageAlt: '宅經濟當道，另類商機逆勢成長',
+      title: '宅經濟當道，另類商機逆勢成長',
       badge: 'EP3',
       videoUrl:
         'https://iframe.videodelivery.net/ceca137e368af4e5b28d873415064802',

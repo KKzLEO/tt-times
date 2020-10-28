@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { Image } from '@chakra-ui/core'
 import { sm, md, lg, xl } from 'config/breakpoints'
+import Container from 'components/styled/Container'
 
 export const Banner = styled.div`
   .swiper-button-next {
@@ -9,6 +10,12 @@ export const Banner = styled.div`
 
   .swiper-button-prev {
     color: #fff001;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
   }
 `
 
@@ -140,3 +147,21 @@ export const RespImg = styled(Image)`
   height: auto;
   cursor: pointer;
 `
+
+export const ContentV2 = styled(Container)`
+  background-color: #ddd7d7;
+  text-align: center;
+  padding: 70px 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  h1 {
+
+  }
+
+  h2 {
+    margin: 0;
+  }
+`
+
+

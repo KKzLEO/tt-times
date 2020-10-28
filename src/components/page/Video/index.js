@@ -5,7 +5,7 @@ import Section from 'components/styled/Section'
 import VideoItem from './Item'
 import { Grid } from '@chakra-ui/core'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import SingleVideoPage from './SingleVideoPage'
+import SingleVideoPage from '../SingleVideo'
 import { useMainContext } from 'components/Context'
 
 const Video = (props) => {

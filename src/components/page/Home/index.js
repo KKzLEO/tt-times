@@ -2,7 +2,6 @@ import React from 'react'
 import * as Style from './style'
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Section from 'components/styled/Section'
 import { breakpoints } from 'config/breakpoints'
 import { useMainContext } from 'components/Context'
 import { useHistory } from 'react-router-dom'
@@ -17,7 +16,7 @@ const sliderBreakpoints = {
     slidesPerView: 1,
   },
   [breakpoints._lg]: {
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     spaceBetween: 40,
   },
 }
@@ -30,7 +29,6 @@ const Home = (props) => {
   const history = useHistory()
 
   const handleClick = (videoId) => () => {
-    console.log('fucku')
     history.push(`/video/${videoId}`)
   }
 
@@ -39,6 +37,7 @@ const Home = (props) => {
       <Style.Banner>
         <Swiper
           slidesPerView={1}
+          spaceBetween={50}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
           centeredSlides
@@ -46,6 +45,7 @@ const Home = (props) => {
           loopFillGroupWithBlank
           navigation
           breakpoints={sliderBreakpoints}
+          autoplay
         >
           {videos.map(({ imageUrl, imageAlt, id }) => (
             <SwiperSlide key={`home-video-slider-${id}`}>
@@ -58,7 +58,17 @@ const Home = (props) => {
           ))}
         </Swiper>
       </Style.Banner>
-      <Section>
+      <Style.ContentV2>
+        <h1>『TT TIM E 很想說出口的事』</h1>
+        <h2>最有趣的市場洞察 最實用的貿易知識</h2>
+        <h2>這裡是TT Time-很想說出口的事，歡迎加入我們的行列</h2>
+      </Style.ContentV2>
+      {/* <Section>
+        <Style.ContentV2>
+          <h1>『TT TIM E 很想說出口的事』</h1>
+          <h2>最有趣的市場洞察 最實用的貿易知識</h2>
+          <h2>這裡是TT Time-很想說出口的事，歡迎加入我們的行列</h2>
+        </Style.ContentV2>
         <Style.Title>
           <h2>關於我們</h2>
           <h3>TT TIME 很想說出口的事</h3>
@@ -69,7 +79,7 @@ const Home = (props) => {
           <br />
           這裡是TT Time-很想說出口的事，歡迎加入我們的行列
         </Style.Content>
-      </Section>
+      </Section> */}
     </>
   )
 }

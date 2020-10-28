@@ -3,7 +3,7 @@ import 'normalize.css'
 import 'assets/scss/font.scss'
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
-import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/pagination/pagination.scss'
 
 const GlobalStyle = () => {
   return (

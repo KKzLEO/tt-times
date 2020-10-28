@@ -2,7 +2,7 @@ import React from 'react'
 import * as Style from './style'
 import Navigations from './Navigations'
 import NavigationsSP from './NavigationsSP'
-import LOGO from 'assets/images/logo.jpg'
+import LOGO from 'assets/images/logo.png'
 import { useHistory } from 'react-router-dom'
 
 const Header = () => {

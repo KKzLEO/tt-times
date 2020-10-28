@@ -5,8 +5,13 @@ import { Image } from '@chakra-ui/core'
 import ListItem from '@material-ui/core/ListItem'
 import Button from '@material-ui/core/Button'
 
-const ACTIVE = '#f6d50c'
+const ACTIVE = '#555'
 const NORMAL = '#555'
+
+//302d30
+//555
+//f6d50c
+// 262626
 
 export const OuterContainer = styled.div`
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -21,7 +26,7 @@ export const Container = styled(ResposiveContainer)`
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   ${sm} {
     height: 60px;
@@ -43,7 +48,7 @@ export const Container = styled(ResposiveContainer)`
 export const Navigations = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
 
   a {
