@@ -6,6 +6,7 @@ const ratio = 0.5625
 export const Iframe = styled.iframe`
   width: 100%;
   margin: 0 auto;
+  height: calc(100vw * ${ratio});
 
   ${sm} {
     height: calc(100vw * ${ratio});
@@ -29,6 +30,7 @@ export const VideoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 100vw;
 
   ${sm} {
     width: 100vw;
