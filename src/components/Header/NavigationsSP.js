@@ -10,7 +10,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 
 const NavigationsSP = () => {
-  const match = useRouteMatch('/:page/')
+  const match = useRouteMatch('/tt-times/:page/')
   const history = useHistory()
   const page = match?.params?.page || 'default'
   const [open, setOpen] = useState(false)
@@ -27,7 +27,7 @@ const NavigationsSP = () => {
       </Style.Menu>
       <Drawer anchor="top" open={open} onClose={() => setOpen(false)}>
         <List>
-          {routes.map(({ Icon, pathname, name, key }) => (
+          {routes.map(({ pathname, name, key }) => (
             <Style.NavigationItemSP
               button
               key={key}
@@ -35,7 +35,6 @@ const NavigationsSP = () => {
               active={key === page}
             >
               <ListItemIcon>
-                <Icon />
               </ListItemIcon>
               <ListItemText primary={name} />
             </Style.NavigationItemSP>
