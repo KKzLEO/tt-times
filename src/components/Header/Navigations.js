@@ -1,35 +1,36 @@
 import React from 'react'
 import * as Style from './style'
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined'
-import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined'
-import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutlined'
-import TheatersOutlinedIcon from '@material-ui/icons/TheatersOutlined'
 import { Link, useRouteMatch } from 'react-router-dom'
+
+import HomeIcon from 'assets/images/home.png'
+import ComputerIcon from 'assets/images/computer.png'
+import DocumentIcon from 'assets/images/document.png'
+import VolumeIcon from 'assets/images/volume.png'
 
 export const routes = [
   {
-    pathname: '/tt-times',
-    Icon: HomeOutlinedIcon,
-    name: '首頁',
-    key: 'default'
-  },
-  {
     pathname: '/tt-times/video',
-    Icon: TheatersOutlinedIcon,
-    name: '影片',
-    key: 'video'
+    src: ComputerIcon,
+    name: 'Video',
+    key: 'video',
   },
   {
     pathname: '/tt-times/podcast',
-    Icon: MusicNoteOutlinedIcon,
-    name: 'PODCAST',
-    key: 'podcast'
+    src: VolumeIcon,
+    name: 'Podcast',
+    key: 'podcast',
   },
   {
     pathname: '/tt-times/blog',
-    Icon: BookmarkBorderOutlinedIcon,
-    name: '部落格',
-    key: 'blog'
+    src: DocumentIcon,
+    name: 'Blog',
+    key: 'blog',
+  },
+  {
+    pathname: '/tt-times',
+    src: HomeIcon,
+    name: 'Home',
+    key: 'default',
   },
 ]
 
@@ -39,11 +40,11 @@ const Navigations = (props) => {
 
   return (
     <Style.Navigations>
-      {routes.map(({ Icon, pathname, name, key }, index) => (
+      {routes.map(({ src, pathname, name, key }, index) => (
         <Link to={pathname} key={`route-${index}`}>
           <Style.Navigation active={page === key}>
-            <Icon />
             <span>{name}</span>
+            <Style.NavIcon src={src} alt={name} />
           </Style.Navigation>
         </Link>
       ))}

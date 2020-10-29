@@ -9,13 +9,19 @@ const Header = () => {
   const history = useHistory()
 
   const handleClick = () => {
-    history.push('/')
+    history.push('/tt-times/')
   }
 
   return (
     <Style.OuterContainer>
       <Style.Container>
-        <Style.Logo src={LOGO} htmlWidth='120' htmlHeight='80' alt='LOGO' onClick={handleClick} />
+        <Style.Logo
+          src={LOGO}
+          htmlWidth="120"
+          htmlHeight="80"
+          alt="LOGO"
+          onClick={handleClick}
+        />
         <Navigations />
         <NavigationsSP />
       </Style.Container>

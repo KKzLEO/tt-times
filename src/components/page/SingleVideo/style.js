@@ -52,8 +52,11 @@ export const VideoContainer = styled.div`
 export const TitleContainer = styled.div`
   padding: 20px;
   width: 100%;
+  text-align: center;
 `
 
 export const Title = styled.h2`
   font-size: 24px;
+  color: #2e338e;
+  font-weight: 500;
 `

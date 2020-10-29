@@ -9,7 +9,6 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  CSSReset,
 } from '@chakra-ui/core'
 import * as Style from './style'
 
@@ -59,7 +58,6 @@ const articles = [
 const Podcast = () => {
   return (
     <>
-      <CSSReset />
       <TitleContainer>
         <h1>TT Time Blog</h1>
         <h2>第1季 後疫情時代 新貿易進行式</h2>

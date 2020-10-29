@@ -7,7 +7,7 @@ import Blog from 'components/page/Blog'
 import Footer from 'components/Footer'
 import ScrollToTop from 'components/ScrollToTop'
 import MainContexProvider from 'components/Context'
-import { ThemeProvider } from '@chakra-ui/core'
+import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { theme } from '@chakra-ui/core'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -17,6 +17,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <GlobalStyle />
+        <CSSReset />
         <Header />
         <MainContexProvider>
           <ScrollToTop>

@@ -23,6 +23,7 @@ export const TitleContainer = styled(RespContainer)`
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    color: #2e338e;
   }
 `
 

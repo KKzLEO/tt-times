@@ -11,15 +11,18 @@ const GlobalStyle = () => {
       styles={css`
         html {
           box-sizing: border-box;
-          font-family: Noto Sans TC, sans-serif !important;
+          font-family: 'Share Tech', 'Noto Sans TC', '微軟正黑體',
+            'Microsoft JhengHei', 'PingFang TC', 'Helvetica Neue', Helvetica,
+            Arial, sans-serif;
+          height: 100%;
         }
 
         #root {
           height: 100%;
         }
 
-        div {
-          box-sizing: border-box;
+        body {
+          height: 100%;
         }
 
         div,
@@ -32,7 +35,9 @@ const GlobalStyle = () => {
         h6,
         td,
         label {
-          font-family: Noto Sans TC, sans-serif !important;
+          font-family: 'Share Tech', 'Noto Sans TC', '微軟正黑體',
+            'Microsoft JhengHei', 'PingFang TC', 'Helvetica Neue', Helvetica,
+            Arial, sans-serif;
         }
       `}
     />

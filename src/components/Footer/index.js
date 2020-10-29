@@ -8,6 +8,7 @@ import { Image } from '@chakra-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import { createBreakpoint } from 'react-use'
 import { breakpoints } from 'config/breakpoints'
+import ShareIcon from 'assets/images/share.png'
 
 const useBreakpoint = createBreakpoint(breakpoints)
 
@@ -47,6 +48,7 @@ const Footer = (props) => {
           <Image {...config} src={config.cdri} />
         </Style.LogoContainer>
         <Style.Back>
+          <Style.Share src={ShareIcon} alt="share" />
           BACK
           <ArrowForwardIosIcon />
         </Style.Back>

@@ -5,8 +5,8 @@ import { Image } from '@chakra-ui/core'
 import ListItem from '@material-ui/core/ListItem'
 import Button from '@material-ui/core/Button'
 
-const ACTIVE = '#555'
-const NORMAL = '#555'
+const ACTIVE = 'BLACK'
+const NORMAL = 'BLACK'
 
 //302d30
 //555
@@ -48,7 +48,7 @@ export const Container = styled(ResposiveContainer)`
 export const Navigations = styled.div`
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   height: 100%;
 
   a {
@@ -65,7 +65,8 @@ export const Navigation = styled.span`
   height: 100%;
   width: 100px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 900;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,4 +149,10 @@ export const Menu = styled(Button)`
   ${lessThanMd} {
     display: block !important;
   }
+`
+
+export const NavIcon = styled.img`
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
 `

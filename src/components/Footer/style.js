@@ -17,7 +17,7 @@ export const Container = styled(ResposiveContainer)`
 `
 
 export const Facebook = styled(FacebookIcon)`
-  color: white;
+  color: #3a549e;
   font-size: 32px !important;
 `
 
@@ -41,4 +41,10 @@ export const Back = styled.span`
   display: flex;
   align-items: center;
   font-weight: 900;
+`
+
+export const Share = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 `

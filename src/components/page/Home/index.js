@@ -2,24 +2,11 @@ import React from 'react'
 import * as Style from './style'
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { breakpoints } from 'config/breakpoints'
 import { useMainContext } from 'components/Context'
 import { useHistory } from 'react-router-dom'
+import LOGO from 'assets/images/logo.png'
 
 SwiperCore.use([Navigation, Pagination, Autoplay])
-
-const sliderBreakpoints = {
-  [breakpoints._sm]: {
-    slidesPerView: 1,
-  },
-  [breakpoints._md]: {
-    slidesPerView: 1,
-  },
-  [breakpoints._lg]: {
-    slidesPerView: 1,
-    spaceBetween: 40,
-  },
-}
 
 const Home = (props) => {
   const {
@@ -29,57 +16,43 @@ const Home = (props) => {
   const history = useHistory()
 
   const handleClick = (videoId) => () => {
-    history.push(`/video/${videoId}`)
+    history.push(`/tt-times/video/${videoId}`)
   }
 
   return (
     <>
       <Style.Banner>
+        <Style.Title>第1季 後疫情時代 新貿易進行式</Style.Title>
         <Swiper
           slidesPerView={1}
           spaceBetween={50}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={(swiper) => console.log(swiper)}
           centeredSlides
           loop
           loopFillGroupWithBlank
           navigation
-          breakpoints={sliderBreakpoints}
           autoplay
         >
           {videos.map(({ imageUrl, imageAlt, id }) => (
             <SwiperSlide key={`home-video-slider-${id}`}>
-              <Style.RespImg
-                src={imageUrl}
-                alt={imageAlt}
-                onClick={handleClick(id)}
-              />
+              <div>
+                <Style.RespImg
+                  src={imageUrl}
+                  alt={imageAlt}
+                  onClick={handleClick(id)}
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </Style.Banner>
-      <Style.ContentV2>
+      <Style.Content>
+        <Style.ContentImage src={LOGO} alt="logo" />
         <h1>『TT TIM E 很想說出口的事』</h1>
-        <h2>最有趣的市場洞察 最實用的貿易知識</h2>
-        <h2>這裡是TT Time-很想說出口的事，歡迎加入我們的行列</h2>
-      </Style.ContentV2>
-      {/* <Section>
-        <Style.ContentV2>
-          <h1>『TT TIM E 很想說出口的事』</h1>
+        <div>
           <h2>最有趣的市場洞察 最實用的貿易知識</h2>
           <h2>這裡是TT Time-很想說出口的事，歡迎加入我們的行列</h2>
-        </Style.ContentV2>
-        <Style.Title>
-          <h2>關於我們</h2>
-          <h3>TT TIME 很想說出口的事</h3>
-        </Style.Title>
-        <Style.Content>
-          最有趣的<Style.Highlight>市場洞察</Style.Highlight>，最實用的
-          <Style.Highlight>貿易知識</Style.Highlight>
-          <br />
-          這裡是TT Time-很想說出口的事，歡迎加入我們的行列
-        </Style.Content>
-      </Section> */}
+        </div>
+      </Style.Content>
     </>
   )
 }
