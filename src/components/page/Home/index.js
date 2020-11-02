@@ -47,10 +47,14 @@ const Home = (props) => {
       </Style.Banner>
       <Style.Content>
         <Style.ContentImage src={LOGO} alt="logo" />
-        <h1>『TT TIM E 很想說出口的事』</h1>
+        <h1>『TT TIME 很想說出口的事』</h1>
         <div>
-          <h2>最有趣的市場洞察 最實用的貿易知識</h2>
-          <h2>這裡是TT Time-很想說出口的事，歡迎加入我們的行列</h2>
+          <h2>#拚貿易！有撇步！</h2>
+          <h2>#世界在變，態度要有！</h2>
+          <h2>
+            #全新硬核脫口秀，每集7分鐘，聽Uncle
+            Tim與Tom小哥說出口的事，讓你跟上全球貿易新浪潮
+          </h2>
         </div>
       </Style.Content>
     </>

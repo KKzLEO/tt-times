@@ -9,6 +9,7 @@ import ScrollToTop from 'components/ScrollToTop'
 import MainContexProvider from 'components/Context'
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { theme } from '@chakra-ui/core'
+import OuterHeader from 'components/OuterHeader'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <GlobalStyle />
         <CSSReset />
+        <OuterHeader />
         <Header />
         <MainContexProvider>
           <ScrollToTop>

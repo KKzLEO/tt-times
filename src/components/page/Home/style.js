@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
 import { Image } from '@chakra-ui/core'
-import { sm, md, lg, xl } from 'config/breakpoints'
+import { sm, md, lg, xl, lessThanLg } from 'config/breakpoints'
 import Container from 'components/styled/Container'
 
 export const Banner = styled(Container)`
-  /* height: calc(100vh - 100px); */
   background-color: #ddd7d7;
   padding: 10px;
 
@@ -22,20 +21,20 @@ export const Banner = styled(Container)`
 
   ${md} {
     padding: 0 50px;
-    padding-top: calc((100vh - 100px - 478px) / 2);
-    height: calc(100vh - 70px);
+    padding-top: calc((100vh - 100px - 478px - 50px) / 2);
+    height: calc(100vh - 70px - 50px);
   }
 
   ${lg} {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 80px - 50px);
     padding: 0 100px;
-    padding-top: calc((100vh - 100px - 478px) / 2);
+    padding-top: calc((100vh - 100px - 478px - 50px) / 2);
   }
 
   ${xl} {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px - 80px);
     padding: 0 160px;
-    padding-top: calc((100vh - 100px - 478px) / 2);
+    padding-top: calc((100vh - 100px - 478px - 80px) / 2);
   }
 `
 
@@ -56,7 +55,7 @@ export const Content = styled(Container)`
   padding: 70px 10px;
   margin-top: 40px;
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
 
   div {
@@ -73,30 +72,14 @@ export const ContentImage = styled.img`
   position: absolute;
   height: 80px;
   width: 120px;
-  display: none;
+  transform: translateY(-50%);
+  top: 50%;
 
-  ${sm} {
+  ${lessThanLg} {
     display: none;
   }
 
-  ${md} {
-    display: block;
-
-    left: 30px;
-    top: 30px;
-  }
-
-  ${lg} {
-    display: block;
-
-    left: 30px;
-    top: 30px;
-  }
-
   ${xl} {
-    display: block;
-
-    left: 147px;
-    top: 30px;
+    left: 30px;
   }
 `

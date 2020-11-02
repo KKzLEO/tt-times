@@ -10,7 +10,9 @@ import { useMainContext } from 'components/Context'
 
 const Video = (props) => {
   const match = useRouteMatch()
-  const { state: { videos } } = useMainContext()
+  const {
+    state: { videos },
+  } = useMainContext()
 
   return (
     <Switch>

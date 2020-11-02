@@ -2,54 +2,33 @@ import React from 'react'
 import * as Style from './style'
 import CDRI_LOGO from 'assets/images/cdri-logo.png'
 import TRADE_LOGO from 'assets/images/trade-logo.png'
-import CDRI_LOGO_SP from 'assets/images/cdri-logo-sp.png'
-import TRADE_LOGO_SP from 'assets/images/trade-logo-sp.png'
-import { Image } from '@chakra-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
-import { createBreakpoint } from 'react-use'
-import { breakpoints } from 'config/breakpoints'
 import ShareIcon from 'assets/images/share.png'
 
-const useBreakpoint = createBreakpoint(breakpoints)
-
 const Footer = (props) => {
-  const breakpoint = useBreakpoint()
-
-  const getConfig = () => {
-    if (breakpoint === '_xs') {
-      return {
-        htmlHeight: 50,
-        htmlWidth: 50,
-        trade: TRADE_LOGO_SP,
-        cdri: CDRI_LOGO_SP,
-      }
-    }
-
-    return {
-      htmlHeight: 50,
-      htmlWidth: 170,
-      trade: TRADE_LOGO,
-      cdri: CDRI_LOGO,
-    }
+  const onFacebookClick = () => {
+    window.open('https://www.facebook.com/MITleader/', '_blank')
   }
 
-  const config = getConfig()
+  const onBackClick = () => {
+    window.location.href = 'https://mvp-plan.cdri.org.tw/index'
+  }
 
   return (
     <Style.OuterContainer>
       <Style.Container>
-        <Style.Facebook />
+        <Style.Facebook onClick={onFacebookClick} />
         <Style.LogoContainer>
           <span>主辦單位</span>
-          <Image {...config} src={config.trade} />
+          <Style.CRDIImage htmlHeight={40} htmlWidth={136} src={TRADE_LOGO} />
         </Style.LogoContainer>
         <Style.LogoContainer>
           <span>執行單位</span>
-          <Image {...config} src={config.cdri} />
+          <Style.TradeImage htmlHeight={36} htmlWidth={122} src={CDRI_LOGO} />
         </Style.LogoContainer>
-        <Style.Back>
+        <Style.Back onClick={onBackClick}>
           <Style.Share src={ShareIcon} alt="share" />
-          BACK
+          Back to top
           <ArrowForwardIosIcon />
         </Style.Back>
       </Style.Container>

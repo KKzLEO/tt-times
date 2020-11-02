@@ -8,16 +8,9 @@ import Button from '@material-ui/core/Button'
 const ACTIVE = 'BLACK'
 const NORMAL = 'BLACK'
 
-//302d30
-//555
-//f6d50c
-// 262626
-
 export const OuterContainer = styled.div`
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  position: sticky;
-  top: 0;
   z-index: 10;
   background: white;
 `
