@@ -22,7 +22,7 @@ const Footer = (props) => {
           <span>主辦單位</span>
           <Style.CRDIImage htmlHeight={40} htmlWidth={136} src={TRADE_LOGO} />
         </Style.LogoContainer>
-        <Style.LogoContainer>
+        <Style.LogoContainer isHiddenOnSP>
           <span>執行單位</span>
           <Style.TradeImage htmlHeight={36} htmlWidth={122} src={CDRI_LOGO} />
         </Style.LogoContainer>

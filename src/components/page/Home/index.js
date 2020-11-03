@@ -5,6 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { useMainContext } from 'components/Context'
 import { useHistory } from 'react-router-dom'
 import LOGO from 'assets/images/logo.png'
+import { createBreakpoint } from 'react-use'
+import { breakpoints } from 'config/breakpoints'
+
+const useBreakpoint = createBreakpoint(breakpoints)
 
 SwiperCore.use([Navigation, Pagination, Autoplay])
 
@@ -13,11 +17,15 @@ const Home = (props) => {
     state: { videos },
   } = useMainContext()
 
+  const breakpoint = useBreakpoint()
+
   const history = useHistory()
 
   const handleClick = (videoId) => () => {
     history.push(`/tt-times/video/${videoId}`)
   }
+
+  const isSP = ['_xs', '_md', '_sm'].includes(breakpoint)
 
   return (
     <>
@@ -51,10 +59,17 @@ const Home = (props) => {
         <div>
           <h2>#拚貿易！有撇步！</h2>
           <h2>#世界在變，態度要有！</h2>
-          <h2>
-            #全新硬核脫口秀，每集7分鐘，聽Uncle
-            Tim與Tom小哥說出口的事，讓你跟上全球貿易新浪潮
-          </h2>
+          {isSP ? (
+            <>
+              <h2>#全新硬核脫口秀，每集7分鐘</h2>
+              <h2>聽UncleTim與Tom小哥說出口的事，讓你跟上全球貿易新浪潮</h2>
+            </>
+          ) : (
+            <h2>
+              #全新硬核脫口秀，每集7分鐘，聽Uncle
+              Tim與Tom小哥說出口的事，讓你跟上全球貿易新浪潮
+            </h2>
+          )}
         </div>
       </Style.Content>
     </>

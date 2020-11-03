@@ -9,7 +9,7 @@ export const OuterContainer = styled.div`
   height: 70px;
 
   ${lessThanMd} {
-    height: 200px;
+    height: 150px;
   }
 `
 
@@ -31,6 +31,10 @@ export const Facebook = styled(FacebookIcon)`
   color: #3a549e;
   font-size: 40px !important;
   cursor: pointer;
+
+  ${lessThanMd} {
+    display: none !important;
+  }
 `
 
 export const LogoContainer = styled.div`
@@ -43,6 +47,8 @@ export const LogoContainer = styled.div`
   }
 
   ${lessThanMd} {
+    ${(props) => (props.isHiddenOnSP ? 'display: none !important;' : '')}
+
     span {
       display: none;
     }
