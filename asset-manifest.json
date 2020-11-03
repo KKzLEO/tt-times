@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/tt-times/static/css/main.1aed45d3.chunk.css",
-    "main.js": "/tt-times/static/js/main.9e6cffcb.chunk.js",
-    "main.js.map": "/tt-times/static/js/main.9e6cffcb.chunk.js.map",
-    "runtime-main.js": "/tt-times/static/js/runtime-main.856506d8.js",
-    "runtime-main.js.map": "/tt-times/static/js/runtime-main.856506d8.js.map",
-    "static/css/2.db413192.chunk.css": "/tt-times/static/css/2.db413192.chunk.css",
-    "static/js/2.175ca12b.chunk.js": "/tt-times/static/js/2.175ca12b.chunk.js",
-    "static/js/2.175ca12b.chunk.js.map": "/tt-times/static/js/2.175ca12b.chunk.js.map",
-    "static/js/3.0b73fef3.chunk.js": "/tt-times/static/js/3.0b73fef3.chunk.js",
-    "static/js/3.0b73fef3.chunk.js.map": "/tt-times/static/js/3.0b73fef3.chunk.js.map",
+    "main.js": "/tt-times/static/js/main.654cae74.chunk.js",
+    "main.js.map": "/tt-times/static/js/main.654cae74.chunk.js.map",
+    "runtime-main.js": "/tt-times/static/js/runtime-main.07a70bda.js",
+    "runtime-main.js.map": "/tt-times/static/js/runtime-main.07a70bda.js.map",
+    "static/css/2.ac3c8def.chunk.css": "/tt-times/static/css/2.ac3c8def.chunk.css",
+    "static/js/2.a794849d.chunk.js": "/tt-times/static/js/2.a794849d.chunk.js",
+    "static/js/2.a794849d.chunk.js.map": "/tt-times/static/js/2.a794849d.chunk.js.map",
+    "static/js/3.761a1da4.chunk.js": "/tt-times/static/js/3.761a1da4.chunk.js",
+    "static/js/3.761a1da4.chunk.js.map": "/tt-times/static/js/3.761a1da4.chunk.js.map",
     "index.html": "/tt-times/index.html",
-    "static/css/2.db413192.chunk.css.map": "/tt-times/static/css/2.db413192.chunk.css.map",
+    "static/css/2.ac3c8def.chunk.css.map": "/tt-times/static/css/2.ac3c8def.chunk.css.map",
     "static/css/main.1aed45d3.chunk.css.map": "/tt-times/static/css/main.1aed45d3.chunk.css.map",
-    "static/js/2.175ca12b.chunk.js.LICENSE.txt": "/tt-times/static/js/2.175ca12b.chunk.js.LICENSE.txt",
+    "static/js/2.a794849d.chunk.js.LICENSE.txt": "/tt-times/static/js/2.a794849d.chunk.js.LICENSE.txt",
     "static/media/ep1.aa3298ed.jpg": "/tt-times/static/media/ep1.aa3298ed.jpg",
     "static/media/ep2.887b7438.jpg": "/tt-times/static/media/ep2.887b7438.jpg",
     "static/media/ep3.14f1aca0.jpg": "/tt-times/static/media/ep3.14f1aca0.jpg",
@@ -25,10 +25,10 @@
     "static/media/video-banner.b22efa5a.jpg": "/tt-times/static/media/video-banner.b22efa5a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.856506d8.js",
-    "static/css/2.db413192.chunk.css",
-    "static/js/2.175ca12b.chunk.js",
+    "static/js/runtime-main.07a70bda.js",
+    "static/css/2.ac3c8def.chunk.css",
+    "static/js/2.a794849d.chunk.js",
     "static/css/main.1aed45d3.chunk.css",
-    "static/js/main.9e6cffcb.chunk.js"
+    "static/js/main.654cae74.chunk.js"
   ]
 }
