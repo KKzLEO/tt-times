@@ -24,7 +24,7 @@ const Blog = () => {
         <h2>第1季 後疫情時代 新貿易進行式</h2>
       </TitleContainer>
       <SmallSection>
-        <Accordion>
+        <Accordion allowMultiple defaultIndex={[0]}>
           {videos.map(({ badge, title, content, imageUrl }, index) => (
             <AccordionItem key={`article-${index}`}>
               <AccordionHeader>
