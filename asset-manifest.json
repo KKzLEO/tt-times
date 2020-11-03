@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tt-times/static/css/main.1aed45d3.chunk.css",
-    "main.js": "/tt-times/static/js/main.75a24579.chunk.js",
-    "main.js.map": "/tt-times/static/js/main.75a24579.chunk.js.map",
+    "main.js": "/tt-times/static/js/main.9e6cffcb.chunk.js",
+    "main.js.map": "/tt-times/static/js/main.9e6cffcb.chunk.js.map",
     "runtime-main.js": "/tt-times/static/js/runtime-main.856506d8.js",
     "runtime-main.js.map": "/tt-times/static/js/runtime-main.856506d8.js.map",
     "static/css/2.db413192.chunk.css": "/tt-times/static/css/2.db413192.chunk.css",
@@ -22,13 +22,13 @@
     "static/media/mvpLogo_Black.c6329fcd.png": "/tt-times/static/media/mvpLogo_Black.c6329fcd.png",
     "static/media/mvp_icon@3x.95d8f3c6.png": "/tt-times/static/media/mvp_icon@3x.95d8f3c6.png",
     "static/media/trade-logo.9a567355.png": "/tt-times/static/media/trade-logo.9a567355.png",
-    "static/media/video-banner.9b25ad25.jpg": "/tt-times/static/media/video-banner.9b25ad25.jpg"
+    "static/media/video-banner.b22efa5a.jpg": "/tt-times/static/media/video-banner.b22efa5a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.856506d8.js",
     "static/css/2.db413192.chunk.css",
     "static/js/2.175ca12b.chunk.js",
     "static/css/main.1aed45d3.chunk.css",
-    "static/js/main.75a24579.chunk.js"
+    "static/js/main.9e6cffcb.chunk.js"
   ]
 }
