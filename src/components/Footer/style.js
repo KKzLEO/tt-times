@@ -69,11 +69,11 @@ export const Share = styled.img`
 `
 
 export const CRDIImage = styled(Image)`
-  width: 122px;
-  height: 36px;
+  width: 136px;
+  height: 40px;
 `
 
 export const TradeImage = styled(Image)`
-  width: 136px;
-  height: 40px;
+  width: 122px;
+  height: 36px;
 `
