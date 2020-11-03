@@ -28,7 +28,7 @@ const Footer = (props) => {
         </Style.LogoContainer>
         <Style.Back onClick={onBackClick}>
           <Style.Share src={ShareIcon} alt="share" />
-          Back to top
+          Go to top
           <ArrowForwardIosIcon />
         </Style.Back>
       </Style.Container>

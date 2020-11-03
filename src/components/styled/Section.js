@@ -17,13 +17,13 @@ const Section = styled(Container)`
   }
 
   ${lg} {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   ${xl} {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 `
 

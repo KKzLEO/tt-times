@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { sm, md, lg, xl, lessThanXl } from 'config/breakpoints'
+import { lessThanXl } from 'config/breakpoints'
 
 export const Container = styled.div`
   display: flex;
@@ -24,6 +24,7 @@ export const Container = styled.div`
 export const Logo = styled.img`
   height: 36px;
   width: auto;
+  cursor: pointer;
 
   ${lessThanXl} {
     width: 200px;
@@ -32,6 +33,7 @@ export const Logo = styled.img`
 `
 
 export const Login = styled.div`
+  cursor: pointer;
   background-position: -30px -90px;
   width: 30px;
   height: 30px;
