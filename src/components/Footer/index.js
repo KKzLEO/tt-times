@@ -11,7 +11,10 @@ const Footer = (props) => {
   }
 
   const onBackClick = () => {
-    window.location.href = 'https://mvp-plan.cdri.org.tw/index'
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   return (

@@ -38,6 +38,8 @@ export const ImageContainer = styled.div`
 `
 
 export const Section = styled.div`
+  margin-bottom: 10px;
+
   a {
     color: blue;
     text-decoration: underline;
