@@ -17,14 +17,14 @@ const Podcast = () => {
       </Style.TitleContainer>
       <SmallSection>
         <Style.Content>
-          {videos.map(({ audio, title, badge }, index) => (
+          {videos.map(({ audio, title, badge, content }, index) => (
             <Style.PodcastItem key={`podcast-${index}`}>
               <Style.ContentContainer>
                 <Style.PodcastTitle>
                   <Badge>{badge}</Badge>
                   <div>{title}</div>
                 </Style.PodcastTitle>
-                <Style.PodcastText>{audio.content}</Style.PodcastText>
+                <Style.PodcastText>{content[0]}</Style.PodcastText>
                 <div dangerouslySetInnerHTML={{ __html: audio.iframeCode }} />
               </Style.ContentContainer>
             </Style.PodcastItem>

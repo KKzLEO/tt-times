@@ -20,15 +20,13 @@ export const Banner = styled(Container)`
   }
 
   ${md} {
-    padding: 0 50px;
-    padding-top: calc((100vh - 100px - 478px - 50px) / 2);
-    height: calc(100vh - 70px - 50px);
+    padding: 20px;
   }
 
   ${lg} {
     height: calc(100vh - 80px - 50px);
     padding: 0 100px;
-    padding-top: calc((100vh - 100px - 478px - 50px) / 2);
+    padding-top: calc((100vh - 100px - 413px - 50px) / 2);
   }
 
   ${xl} {
@@ -52,7 +50,7 @@ export const RespImg = styled(Image)`
 export const Content = styled(Container)`
   background-color: #ddd7d7;
   text-align: center;
-  padding: 70px 10px;
+  padding: 70px 25px;
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 18px;

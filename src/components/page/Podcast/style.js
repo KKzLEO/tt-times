@@ -62,12 +62,8 @@ export const PodcastTitle = styled.div`
 
 export const PodcastText = styled.div`
   margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 `
 
 export const Audio = styled.audio`

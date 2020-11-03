@@ -38,7 +38,12 @@ const Blog = () => {
                 <Style.ImageContainer>
                   <Image src={imageUrl} alt={title} />
                 </Style.ImageContainer>
-                {content}
+                {content.map((section, index) => (
+                  <Style.Section
+                    key={`blog-article-${index}-section`}
+                    dangerouslySetInnerHTML={{ __html: section }}
+                  />
+                ))}
               </AccordionPanel>
             </AccordionItem>
           ))}

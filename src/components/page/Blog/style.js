@@ -36,3 +36,10 @@ export const ImageContainer = styled.div`
     margin-bottom: 20px;
   }
 `
+
+export const Section = styled.div`
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+`
