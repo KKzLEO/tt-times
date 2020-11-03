@@ -28,12 +28,9 @@ export const CustomBadge = styled(Badge)`
 `
 
 export const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-
   img {
     width: 400px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
   }
 `
 
