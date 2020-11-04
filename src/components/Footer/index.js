@@ -12,8 +12,8 @@ const Footer = (props) => {
   return (
     <Style.OuterContainer>
       <Style.Container>
+        <Style.LogoContainer isHiddenOnSP></Style.LogoContainer>
         <Style.LogoContainer>
-          <span>主辦單位</span>
           <Style.CRDIImage htmlHeight={40} htmlWidth={136} src={TRADE_LOGO} />
         </Style.LogoContainer>
         <Style.Back onClick={onBackClick}>

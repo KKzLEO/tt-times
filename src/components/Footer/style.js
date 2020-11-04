@@ -42,7 +42,7 @@ export const LogoContainer = styled.div`
   }
 
   ${md} {
-    flex: 1;
+    flex: ${(props) => (props.flex ? props.flex : 1)};
     justify-content: center;
   }
 `
@@ -55,6 +55,11 @@ export const Back = styled.span`
 
   ${lessThanMd} {
     margin-top: 10px;
+  }
+
+  ${md} {
+    flex: 1;
+    justify-content: flex-end;
   }
 `
 
