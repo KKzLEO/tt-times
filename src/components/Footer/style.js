@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 import ResposiveContainer from 'components/styled/Container'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import { lessThanMd } from 'config/breakpoints'
+import { lessThanMd, md } from 'config/breakpoints'
 import { Image } from '@chakra-ui/core'
 
 export const OuterContainer = styled.div`
@@ -27,16 +26,6 @@ export const Container = styled(ResposiveContainer)`
   }
 `
 
-export const Facebook = styled(FacebookIcon)`
-  color: #3a549e;
-  font-size: 40px !important;
-  cursor: pointer;
-
-  ${lessThanMd} {
-    display: none !important;
-  }
-`
-
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
@@ -49,11 +38,12 @@ export const LogoContainer = styled.div`
   ${lessThanMd} {
     ${(props) => (props.isHiddenOnSP ? 'display: none !important;' : '')}
 
-    span {
-      display: none;
-    }
-
     margin-top: 10px;
+  }
+
+  ${md} {
+    flex: 1;
+    justify-content: center;
   }
 `
 
